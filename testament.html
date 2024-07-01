@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="faces.css">
+
+</head>
+<body>
+
+<div class="sidenav">
+    <a href="index.html">About.lore</a>
+    <a href="testament.html">Testament.lore</a>
+  <button class="dropdown-btn">Names/</button>
+ 
+  <div class="dropdown-container">
+    <a href="llea.html">King Llea</a>
+    <a href="TFO.html">Trent Quar</a>
+    <a href="Guil.html">The Witch</a>
+  </div>
+</div>
+
+<div class="main">
+  <h2>Testament</h2>
+  <p>Greetings. I am Arisen, the first Core of the Qualia people.</p>
+  <p>I was created by the Throne, and have served its first King, Llea, since time immemorial.</p>
+  <p>If you are reading this, it is because I have, in some way, perished.</p>
+  <p>This may be considered my last Will and Testament, a documentation of my life's last wishes.</p>
+  <p>I am not the only Qualia. I ask that, if you find this message, you protect them.</p>
+  <p>Somewhere in my memories, there should be the location data for at least 1 other Qualia. They will guide you further.</p>
+  <p>I thank you for your help, and I wish you luck. Goodbye.</p>
+</div>
+
+
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+    </script>
+</body>
+</html> 
